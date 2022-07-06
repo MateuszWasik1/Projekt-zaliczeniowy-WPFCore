@@ -25,14 +25,9 @@ namespace WPF.Windows
             InitializeComponent();
 
             LibraryEntities db = new LibraryEntities();
-            var authors = from a in db.Authors 
-                          select new { 
-                              FirstName = a.AFirstName,
-                              LastName = a.ALastName,
-                              FullName = a.AFullName
-                          };
 
-            this.gridAuthors.ItemsSource = authors.ToList();
+
+            this.gridAuthors.ItemsSource = db.Authors.ToList();
 
         }
 
@@ -55,15 +50,63 @@ namespace WPF.Windows
         {
             LibraryEntities db = new LibraryEntities();
 
-            var authors = from a in db.Authors
-                          select new
-                          {
-                              FirstName = a.AFirstName,
-                              LastName = a.ALastName,
-                              FullName = a.AFullName
-                          };
+            this.gridAuthors.ItemsSource = db.Authors.ToList();
+        }
 
-            this.gridAuthors.ItemsSource = authors.ToList();
+        private int updatingAuthorId = 0;
+
+        private void gridAuthors_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.gridAuthors.SelectedIndex >= 0)
+            {
+                if (this.gridAuthors.SelectedItems.Count >= 0)
+                {
+                    if (this.gridAuthors.SelectedItems[0].GetType() == typeof(Author))
+                    {
+                        Author author = (Author)this.gridAuthors.SelectedItems[0];
+                        this.AuthorNameChange.Text = author.AFirstName;
+                        this.AuthorLastNameChange.Text = author.ALastName;
+                        this.AuthorFullNameChange.Text = author.AFullName;
+                        this.updatingAuthorId = author.AID;
+                    }
+                }
+            }
+        }
+
+        private void updateAutor_Click(object sender, RoutedEventArgs e)
+        {
+            LibraryEntities db = new LibraryEntities();
+            var author = (from a in db.Authors
+                          where a.AID == updatingAuthorId
+                          select a).SingleOrDefault();
+
+            if(author != null)
+            {
+                author.AFirstName = this.AuthorNameChange.Text;
+                author.ALastName = this.AuthorLastNameChange.Text;
+                author.AFullName = this.AuthorFullNameChange.Text;
+            };
+
+            db.SaveChanges();
+        }
+
+        private void deleteAuthor_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult msgResult = MessageBox.Show("Czy jesteś pewny, że chcesz usunąć autora ?", "Usuń autora", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+            if(msgResult == MessageBoxResult.Yes)
+            {
+                LibraryEntities db = new LibraryEntities();
+
+                var author = (from a in db.Authors
+                              where a.AID == updatingAuthorId
+                              select a).SingleOrDefault();
+
+                if (author != null)
+                {
+                    db.Authors.Remove(author);
+                    db.SaveChanges();
+                };
+            }
         }
     }
 }
