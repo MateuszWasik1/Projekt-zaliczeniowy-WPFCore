@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF.Windows;
 
 namespace WPF
 {
@@ -23,6 +24,25 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OpenAuthors_Click(object sender, RoutedEventArgs e)
+        {
+            Authors authors = new Authors();
+            this.Visibility = Visibility.Hidden;
+            authors.Show();
+        }
+        private void OpenBooks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OpenClients_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OpenLibrarians_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

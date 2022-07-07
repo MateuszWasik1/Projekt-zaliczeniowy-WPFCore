@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Witamy w systemie zarządzania bibliotekami." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,39,10,312" VerticalAlignment="Center" Height="68" Width="772" FontSize="20" FontWeight="Bold" FontFamily="Tahoma" TextBlock.TextAlignment="Center"/>
+        <Label Content="Poniżej znajdują się odnośniki do stron pozwalających na zarządzanie danymi." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,112,10,239" VerticalAlignment="Center" Height="68" Width="782" FontSize="19" FontWeight="Bold" FontFamily="Tahoma" TextBlock.TextAlignment="Center"/>
+        <Button Content="Autorzy" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="169" Click="OpenAuthors_Click" Height="42" FontSize="15"/>
+        <Button Content="Książki" HorizontalAlignment="Left" Margin="205,231,0,0" VerticalAlignment="Top" Width="169" Click="OpenBooks_Click" Height="42" FontSize="15"/>
+        <Button Content="Klienci" HorizontalAlignment="Left" Margin="411,231,0,0" VerticalAlignment="Top" Width="169" Click="OpenClients_Click" Height="42" FontSize="15"/>
+        <Button Content="Bibliotekarze" HorizontalAlignment="Left" Margin="613,231,0,0" VerticalAlignment="Top" Width="169" Click="OpenLibrarians_Click" Height="42" FontSize="15"/>
     </Grid>
 </Window>
