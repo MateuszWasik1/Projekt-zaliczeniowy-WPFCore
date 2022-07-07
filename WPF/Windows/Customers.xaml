@@ -1,0 +1,60 @@
+﻿<Window x:Class="WPF.Windows.Customers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.Windows"
+        mc:Ignorable="d"
+        Title="Customers" Height="550" Width="1000">
+    <Grid>
+        <DataGrid x:Name="gridCustomers" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="437" Margin="0,378,0,0" SelectionChanged="gridCustomers_SelectionChanged"/>
+        <Label Content="Imię:" HorizontalAlignment="Left" Margin="237,142,0,0" VerticalAlignment="Top" Height="39" Width="108" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <TextBox x:Name="CustomerName" HorizontalAlignment="Left" Height="30" Margin="438,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="237,185,0,0" VerticalAlignment="Top" Height="39" Width="174" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <TextBox x:Name="CustomerLastName" HorizontalAlignment="Left" Height="30" Margin="438,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
+        <TextBox x:Name="CustomerCard" HorizontalAlignment="Left" Height="30" Margin="438,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
+        <Label Content="Numer karty:" HorizontalAlignment="Left" Margin="237,219,0,0" VerticalAlignment="Top" Height="39" Width="174" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <Button x:Name="addCustomerButton" Content="Dodaj klienta" HorizontalAlignment="Left" Margin="584,280,0,0" VerticalAlignment="Top" Width="183" Height="35" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="addCustomerButton_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="loadCustomers" Content="Załaduj klientów" HorizontalAlignment="Left" Margin="35,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="loadCustomers_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="updateCustomer" Content="Edytuj klienta" HorizontalAlignment="Left" Margin="767,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="1.777,3.316" FontSize="20" Click="updateCustomer_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Imię:" HorizontalAlignment="Left" Margin="462,383,0,0" VerticalAlignment="Top" Height="42" Width="100" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <TextBox x:Name="CustomerNameChange" HorizontalAlignment="Left" Height="32" Margin="647,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="462,430,0,0" VerticalAlignment="Top" Height="43" Width="162" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <TextBox x:Name="CustomerLastNameChange" HorizontalAlignment="Left" Height="33" Margin="647,440,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
+        <TextBox x:Name="CustomerCardChange" HorizontalAlignment="Left" Height="32" Margin="647,477,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
+        <Label Content="Numer karty:" HorizontalAlignment="Left" Margin="462,467,0,0" VerticalAlignment="Top" Height="42" Width="162" FontSize="24" FontFamily="Yu Gothic Medium"/>
+        <Button x:Name="deleteCustomer" Content="Usuń klienta" HorizontalAlignment="Left" Margin="398,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="deleteCustomer_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>

@@ -40,7 +40,9 @@ namespace WPF
         }
         private void OpenClients_Click(object sender, RoutedEventArgs e)
         {
-
+            Customers customers = new Customers();
+            this.Visibility = Visibility.Hidden;
+            customers.Show();
         }
         private void OpenLibrarians_Click(object sender, RoutedEventArgs e)
         {
