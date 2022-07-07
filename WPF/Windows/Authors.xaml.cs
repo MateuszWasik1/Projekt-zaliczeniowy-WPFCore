@@ -26,9 +26,7 @@ namespace WPF.Windows
 
             LibraryEntities db = new LibraryEntities();
 
-
             this.gridAuthors.ItemsSource = db.Authors.ToList();
-
         }
 
         private void addAuthorButton_Click(object sender, RoutedEventArgs e)
@@ -76,11 +74,10 @@ namespace WPF.Windows
         private void updateAutor_Click(object sender, RoutedEventArgs e)
         {
             LibraryEntities db = new LibraryEntities();
-            var author = (from a in db.Authors
-                          where a.AID == updatingAuthorId
-                          select a).SingleOrDefault();
 
-            if(author != null)
+            var author = db.Authors.Where(x => x.AID == updatingAuthorId).SingleOrDefault();
+
+            if (author != null)
             {
                 author.AFirstName = this.AuthorNameChange.Text;
                 author.ALastName = this.AuthorLastNameChange.Text;
@@ -97,10 +94,7 @@ namespace WPF.Windows
             {
                 LibraryEntities db = new LibraryEntities();
 
-                var author = (from a in db.Authors
-                              where a.AID == updatingAuthorId
-                              select a).SingleOrDefault();
-
+                var author = db.Authors.Where(x => x.AID == updatingAuthorId).SingleOrDefault();
                 if (author != null)
                 {
                     db.Authors.Remove(author);
