@@ -164,9 +164,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entities\Library.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Entities\LibrarySystemModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
@@ -176,10 +173,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
       <LastGenOutput>LibrarySystemModels.cs</LastGenOutput>
-    </Content>
-    <Content Include="Entities\Library_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>Library.mdf</DependentUpon>
     </Content>
     <Content Include="Library.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
