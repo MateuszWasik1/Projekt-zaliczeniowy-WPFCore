@@ -34,7 +34,9 @@ namespace WPF
         }
         private void OpenBooks_Click(object sender, RoutedEventArgs e)
         {
-
+            Books books = new Books();
+            this.Visibility = Visibility.Hidden;
+            books.Show();
         }
         private void OpenClients_Click(object sender, RoutedEventArgs e)
         {
