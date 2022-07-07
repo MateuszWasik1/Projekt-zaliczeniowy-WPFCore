@@ -82,6 +82,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Entities\Authors.cs">
+      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Books.cs">
+      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Customers.cs">
+      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Librarians.cs">
+      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LibrarySystemModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarySystemModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LibrarySystemModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LibrarySystemModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Authors.xaml.cs">
       <DependentUpon>Authors.xaml</DependentUpon>
     </Compile>
@@ -92,28 +119,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Entities\Author.cs">
-      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Entities\LibrarySystemModels.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystemModels.Context.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Entities\LibrarySystemModels.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystemModels.tt</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Entities\LibrarySystemModels.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -145,11 +150,9 @@
     <EntityDeploy Include="Entities\LibrarySystemModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LibrarySystemModels.Designer.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EntityDeploy>
     <None Include="Entities\LibrarySystemModels.edmx.diagram">
       <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -168,13 +171,11 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
       <LastGenOutput>LibrarySystemModels.Context.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Entities\LibrarySystemModels.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LibrarySystemModels.edmx</DependentUpon>
       <LastGenOutput>LibrarySystemModels.cs</LastGenOutput>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Entities\Library_log.ldf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

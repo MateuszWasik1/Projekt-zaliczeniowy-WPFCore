@@ -25,6 +25,9 @@ namespace WPF.Entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Author> Authors { get; set; }
+        public virtual DbSet<Authors> Authors { get; set; }
+        public virtual DbSet<Books> Books { get; set; }
+        public virtual DbSet<Customers> Customers { get; set; }
+        public virtual DbSet<Librarians> Librarians { get; set; }
     }
 }

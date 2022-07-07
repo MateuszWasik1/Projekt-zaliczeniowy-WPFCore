@@ -32,14 +32,14 @@ namespace WPF.Windows
         private void addAuthorButton_Click(object sender, RoutedEventArgs e)
         {
             LibraryEntities db = new LibraryEntities();
-
-            Author author = new Author()
+            
+            WPF.Entities.Authors author = new WPF.Entities.Authors()
             {
                 AFirstName = this.AuthorName.Text,
                 ALastName = this.AuthorLastName.Text,
                 AFullName = this.AuthorFullName.Text,
             };
-
+            
             db.Authors.Add(author);
             db.SaveChanges();
         }
@@ -59,9 +59,9 @@ namespace WPF.Windows
             {
                 if (this.gridAuthors.SelectedItems.Count >= 0)
                 {
-                    if (this.gridAuthors.SelectedItems[0].GetType() == typeof(Author))
+                    if (this.gridAuthors.SelectedItems[0].GetType() == typeof(WPF.Entities.Authors))
                     {
-                        Author author = (Author)this.gridAuthors.SelectedItems[0];
+                        WPF.Entities.Authors author = (WPF.Entities.Authors)this.gridAuthors.SelectedItems[0];
                         this.AuthorNameChange.Text = author.AFirstName;
                         this.AuthorLastNameChange.Text = author.ALastName;
                         this.AuthorFullNameChange.Text = author.AFullName;

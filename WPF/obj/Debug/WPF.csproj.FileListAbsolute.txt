@@ -25,10 +25,3 @@ C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\obj\Debug\WPF.cspro
 C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\obj\Debug\WPF.csproj.CopyComplete
 C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\obj\Debug\WPF.exe
 C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\obj\Debug\WPF.pdb
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.Context.tt
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.tt
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\Author.cs
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.Context.cs
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.cs
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.Designer.cs
-C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\bin\Debug\Entities\LibrarySystemModels.edmx.diagram
