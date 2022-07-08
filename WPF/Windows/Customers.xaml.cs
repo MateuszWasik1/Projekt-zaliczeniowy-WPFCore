@@ -103,5 +103,30 @@ namespace WPF.Windows
                 };
             }
         }
+
+        private void OpenAuthors_Click(object sender, RoutedEventArgs e)
+        {
+            Authors authors = new Authors();
+            this.Visibility = Visibility.Hidden;
+            authors.Show();
+        }
+        private void OpenBooks_Click(object sender, RoutedEventArgs e)
+        {
+            Books books = new Books();
+            this.Visibility = Visibility.Hidden;
+            books.Show();
+        }
+        private void OpenLibrarians_Click(object sender, RoutedEventArgs e)
+        {
+            Librarians librarians = new Librarians();
+            this.Visibility = Visibility.Hidden;
+            librarians.Show();
+        }
+        private void OpenMainPage_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            mainWindow.Show();
+        }
     }
 }

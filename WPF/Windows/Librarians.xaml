@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Librarians" Height="570" Width="1000">
     <Grid>
+        <Label Content="Menu" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="982" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25"/>
+        <Button Content="Strona główna" HorizontalAlignment="Left" Margin="35,53,0,0" VerticalAlignment="Top" Width="169" Click="OpenMainPage_Click" Height="42" FontSize="15"/>
+        <Button Content="Autorzy" HorizontalAlignment="Left" Margin="292,53,0,0" VerticalAlignment="Top" Width="169" Click="OpenAuthors_Click" Height="42" FontSize="15"/>
+        <Button Content="Książki" HorizontalAlignment="Left" Margin="542,53,0,0" VerticalAlignment="Top" Width="169" Click="OpenBooks_Click" Height="42" FontSize="15"/>
+        <Button Content="Klienci" HorizontalAlignment="Left" Margin="782,53,0,0" VerticalAlignment="Top" Width="169" Click="OpenClients_Click" Height="42" FontSize="15"/>
         <DataGrid x:Name="gridLibrarians" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="437" Margin="0,378,0,0" SelectionChanged="gridLibrarians_SelectionChanged"/>
         <Label Content="Imię:" HorizontalAlignment="Left" Margin="237,142,0,0" VerticalAlignment="Top" Height="39" Width="108" FontSize="24" FontFamily="Yu Gothic Medium"/>
         <TextBox x:Name="LibrarianName" HorizontalAlignment="Left" Height="30" Margin="438,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
