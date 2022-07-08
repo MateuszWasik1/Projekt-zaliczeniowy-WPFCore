@@ -46,7 +46,9 @@ namespace WPF
         }
         private void OpenLibrarians_Click(object sender, RoutedEventArgs e)
         {
-
+            Librarians librarians = new Librarians();
+            this.Visibility = Visibility.Hidden;
+            librarians.Show();
         }
     }
 }

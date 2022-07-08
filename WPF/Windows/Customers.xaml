@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Windows"
         mc:Ignorable="d"
-        Title="Customers" Height="550" Width="1000">
+        Title="Customers" Height="570" Width="1000">
     <Grid>
         <DataGrid x:Name="gridCustomers" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="437" Margin="0,378,0,0" SelectionChanged="gridCustomers_SelectionChanged"/>
         <Label Content="Imię:" HorizontalAlignment="Left" Margin="237,142,0,0" VerticalAlignment="Top" Height="39" Width="108" FontSize="24" FontFamily="Yu Gothic Medium"/>

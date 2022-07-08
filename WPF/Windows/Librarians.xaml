@@ -1,20 +1,20 @@
-﻿<Window x:Class="WPF.Windows.Authors"
+﻿<Window x:Class="WPF.Windows.Librarians"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Windows"
         mc:Ignorable="d"
-        Title="Authors" Height="570" Width="1000">
+        Title="Librarians" Height="570" Width="1000">
     <Grid>
-        <DataGrid x:Name="gridAuthors" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="437" Margin="0,378,0,0" SelectionChanged="gridAuthors_SelectionChanged"/>
+        <DataGrid x:Name="gridLibrarians" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="437" Margin="0,378,0,0" SelectionChanged="gridLibrarians_SelectionChanged"/>
         <Label Content="Imię:" HorizontalAlignment="Left" Margin="237,142,0,0" VerticalAlignment="Top" Height="39" Width="108" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <TextBox x:Name="AuthorName" HorizontalAlignment="Left" Height="30" Margin="438,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
+        <TextBox x:Name="LibrarianName" HorizontalAlignment="Left" Height="30" Margin="438,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
         <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="237,185,0,0" VerticalAlignment="Top" Height="39" Width="174" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <TextBox x:Name="AuthorLastName" HorizontalAlignment="Left" Height="30" Margin="438,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
-        <TextBox x:Name="AuthorFullName" HorizontalAlignment="Left" Height="30" Margin="438,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
+        <TextBox x:Name="LibrarianLastName" HorizontalAlignment="Left" Height="30" Margin="438,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20"/>
+        <TextBox x:Name="LibrarianEmail" HorizontalAlignment="Left" Height="30" Margin="438,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
         <Label Content="Pełne imię:" HorizontalAlignment="Left" Margin="237,219,0,0" VerticalAlignment="Top" Height="39" Width="174" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <Button x:Name="addAuthorButton" Content="Dodaj autora" HorizontalAlignment="Left" Margin="584,280,0,0" VerticalAlignment="Top" Width="183" Height="35" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="addAuthorButton_Click">
+        <Button x:Name="addLibrarianButton" Content="Dodaj bibliotekarza" HorizontalAlignment="Left" Margin="584,280,0,0" VerticalAlignment="Top" Width="183" Height="35" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="addLibrarianButton_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <SkewTransform/>
@@ -23,7 +23,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="loadAuthors" Content="Załaduj autorów" HorizontalAlignment="Left" Margin="35,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="loadAuthors_Click">
+        <Button x:Name="loadLibrarians" Content="Załaduj bibliotekarzy" HorizontalAlignment="Left" Margin="35,325,0,0" VerticalAlignment="Top" Width="196" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="loadLibrarians_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <SkewTransform/>
@@ -32,7 +32,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="updateAutor" Content="Edytuj autora" HorizontalAlignment="Left" Margin="767,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="1.777,3.316" FontSize="20" Click="updateAutor_Click">
+        <Button x:Name="updateLibrarian" Content="Edytuj bibliotekarza" HorizontalAlignment="Left" Margin="767,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="1.777,3.316" FontSize="20" Click="updateLibrarian_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <SkewTransform/>
@@ -42,12 +42,12 @@
             </Button.RenderTransform>
         </Button>
         <Label Content="Imię:" HorizontalAlignment="Left" Margin="462,383,0,0" VerticalAlignment="Top" Height="42" Width="100" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <TextBox x:Name="AuthorNameChange" HorizontalAlignment="Left" Height="32" Margin="647,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
+        <TextBox x:Name="LibrarianNameChange" HorizontalAlignment="Left" Height="32" Margin="647,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
         <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="462,430,0,0" VerticalAlignment="Top" Height="43" Width="162" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <TextBox x:Name="AuthorLastNameChange" HorizontalAlignment="Left" Height="33" Margin="647,440,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
-        <TextBox x:Name="AuthorFullNameChange" HorizontalAlignment="Left" Height="32" Margin="647,477,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
+        <TextBox x:Name="LibrarianLastNameChange" HorizontalAlignment="Left" Height="33" Margin="647,440,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20"/>
+        <TextBox x:Name="LibrarianEmailChange" HorizontalAlignment="Left" Height="32" Margin="647,477,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304" FontSize="20" RenderTransformOrigin="1.325,0.594"/>
         <Label Content="Pełne imię:" HorizontalAlignment="Left" Margin="462,467,0,0" VerticalAlignment="Top" Height="42" Width="162" FontSize="24" FontFamily="Yu Gothic Medium"/>
-        <Button x:Name="deleteAuthor" Content="Usuń autora" HorizontalAlignment="Left" Margin="398,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="deleteAuthor_Click">
+        <Button x:Name="deleteLibrarian" Content="Usuń bibliotekarza" HorizontalAlignment="Left" Margin="398,325,0,0" VerticalAlignment="Top" Width="184" Height="38" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="deleteLibrarian_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <SkewTransform/>
