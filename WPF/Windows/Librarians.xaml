@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Windows"
         mc:Ignorable="d"
-        Title="Librarians" Height="570" Width="1000">
+        Title="Bibliotekarze" Height="570" Width="1000">
     <Grid>
         <Label Content="Menu Bibliotekarzy" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="982" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25"/>
         <Button Content="Strona główna" HorizontalAlignment="Left" Margin="35,53,0,0" VerticalAlignment="Top" Width="169" Click="OpenMainPage_Click" Height="42" FontSize="15"/>

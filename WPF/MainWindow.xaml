@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Strona główna" Height="450" Width="800">
     <Grid>
         <Label Content="Witamy w systemie zarządzania bibliotekami." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="10,39,10,312" VerticalAlignment="Center" Height="68" Width="772" FontSize="20" FontWeight="Bold" FontFamily="Tahoma" TextBlock.TextAlignment="Center"/>
         <Label Content="Poniżej znajdują się odnośniki do stron pozwalających na zarządzanie danymi." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,112,10,239" VerticalAlignment="Center" Height="68" Width="782" FontSize="19" FontWeight="Bold" FontFamily="Tahoma" TextBlock.TextAlignment="Center"/>
