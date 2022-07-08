@@ -1,7 +1,0 @@
-﻿CREATE TABLE [dbo].[Books]
-(
-	[BID] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [BTitle] NVARCHAR(50) NULL, 
-    [BISBN] NVARCHAR(50) NULL, 
-    [BPublishDate] DATETIME NULL
-)
