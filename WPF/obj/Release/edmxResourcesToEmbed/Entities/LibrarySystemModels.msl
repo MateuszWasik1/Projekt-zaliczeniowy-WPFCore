@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="LibraryModel.Authors">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AID" ColumnName="AID" />
+          <ScalarProperty Name="AFirstName" ColumnName="AFirstName" />
+          <ScalarProperty Name="ALastName" ColumnName="ALastName" />
+          <ScalarProperty Name="AFullName" ColumnName="AFullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LibraryModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="BID" ColumnName="BID" />
+          <ScalarProperty Name="BISBN" ColumnName="BISBN" />
+          <ScalarProperty Name="BTitle" ColumnName="BTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="LibraryModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CFirstName" ColumnName="CFirstName" />
+          <ScalarProperty Name="CLastName" ColumnName="CLastName" />
+          <ScalarProperty Name="CCardName" ColumnName="CCardName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Librarians">
+      <EntityTypeMapping TypeName="LibraryModel.Librarians">
+        <MappingFragment StoreEntitySet="Librarians">
+          <ScalarProperty Name="LID" ColumnName="LID" />
+          <ScalarProperty Name="LFirstName" ColumnName="LFirstName" />
+          <ScalarProperty Name="LLastName" ColumnName="LLastName" />
+          <ScalarProperty Name="LEmail" ColumnName="LEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -8,10 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entities/library.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entities/librarysystemmodels.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entities/librarysystemmodels.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entities/library_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("library.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("library_log.ldf")]
 

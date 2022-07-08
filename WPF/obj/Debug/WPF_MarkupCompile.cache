@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\McBezimienny\source\repos\MateuszWasik1\WPFCore\WPF\App.xaml
-2-1620685628
-61373289618
-141412474490
+51851301973
+41659714685
+17-243716995
 18-205272781
-MainWindow.xaml;Windows\Authors.xaml;
+Windows\MainWindow.xaml;Windows\Authors.xaml;Windows\Books.xaml;Windows\Customers.xaml;Windows\Librarians.xaml;
 
 True
 
